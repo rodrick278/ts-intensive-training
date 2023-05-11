@@ -3,14 +3,15 @@
     "module": "esnext",
     "target": "es2017",
     "lib": ["ESNext"],
-    "strict": true,
+    "strict": false,
     "esModuleInterop": true,
     "moduleResolution": "node",
     "skipLibCheck": true,
     "noUnusedLocals": false,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
-    "allowJs": true
+    "allowJs": true,
+    "strictNullChecks": true
   },
   "exclude": ["node_modules", "dist"]
 }
