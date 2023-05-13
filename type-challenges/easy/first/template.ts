@@ -23,3 +23,4 @@
  */
 type First<T extends any[]> = T extends [infer first, ...infer args] ? first : never
 
+type Tail<T extends any[]> = T extends [...infer args, infer last] ? last : never
