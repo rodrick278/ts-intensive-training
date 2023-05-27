@@ -15,10 +15,4 @@ type MyReadonly2<T, K extends keyof T = keyof T> = {
 // 用自带的方法
 // type MyReadonly2<T, K extends keyof T = keyof T> = Readonly<Pick<T, K>> & Omit<T, K>
 
-interface Todo2 {
-  readonly title: string
-  description?: string
-  completed: boolean
-}
 
-type aa = MyReadonly2<Todo2, 'description'>
