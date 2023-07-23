@@ -12,4 +12,3 @@ type PercentageParser<A extends string> = A extends `${infer L}${infer R}`
     : ['', A, '']
   : ['', '', '']
 
-type aa = PercentageParser<'100%'>
